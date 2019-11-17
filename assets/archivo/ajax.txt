@@ -1,0 +1,49 @@
+    // window.addEventListener("load", inicio);
+    //creamos la funcion con el evento click y nombrando una nueva funcion
+    // function inicio() {
+    // document.getElementById("searchCountry").addEventListener("keyup", toshowname);
+    //     document.getElementById("showCountries").addEventListener("submit", toshowAjax);
+    // }
+    //con la nueva funcion creada trabajaremos con Ajax
+    // function toshowname(e) {
+    //     //buscamos por elemento y extremos el value
+    //     var cadena = e.target.value;
+    //     if (cadena.length == 0) {
+    //         document.getElementById("sugerencia").innerHTML = "";
+    //         return;
+    //     } else {
+    //         var xhr = new XMLHttpRequest();
+    //         xhr.onreadystatechange = function() {
+    //             if (this.readyState == 4 && this.status == 200) {
+    //                 document.getElementById("sugerencia").innerHTML = this.responseText;
+    //             }
+    //         }
+    //         xhr.open("GET", "conexion.php?nombre=" + cadena, true);
+    //         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //         // xhr.send();
+    //         xhr.send("nombre=" + cadena);
+    //     }
+    // }
+
+    // function toshowAjax() {
+    //     var xhr = new XMLHttpRequest();
+    //     //cuando cambien el estado que ejecute esta funcion anonima
+    //     xhr.open("Get", "conexion.php", true);
+    // xhr.onreadystatechange = function() {
+    //     //hacemos una peticion de http
+    //     if (this.readyState == 4 && this.status == 200) {
+    //         //Capturaremosel texto de php al hacer parse un arraya
+    //         var countries = JSON.parse(this.responseText);
+
+    //         //recorremos el array con un for
+    //         for (var i = 0; i < countries.length; i++) {
+    //             document.getElementById("parrafo").innerHTML += countries[i] + "<br/>";
+    //         }
+    //         //Si queremos convertir un array js a una cadena usamos stringfy
+    //         var cadena = JSON.stringify(countries);
+    //         document.getElementById("parrafo").innerHTML += "El array" + countries + "en modo cadena es" + cadena + "<br/>";
+    //     }
+    // }
+
+    //     xhr.send();
+    //
